@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Cine_Aula_Funcoes</title>
+     <link rel="stylesheet" href="video.css">
+    <script src="track.js"></script>
+    
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+     <integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+
+</head>
+
+<body>
+<div id="quadro">
+    <div class="container">
+                <video id="video" controls src="./Legenda/elephants-dream-medium.mp4">
+                    <track srclang="en" label="Legendas em Inglês" rind="subtitles"
+                        src="./Legenda/elephants-dream-subtitles-en.vtt" default>
+                    </track>
+                    <track srclang="en" label="Legendas em Alemão" rind="subtitles"
+                        src="./Legenda/elephants-dream-subtitles-de.vtt">
+                    </track>
+                    <track srclang="en" label="Capítulos" rind="chapters"
+                        src="./Legenda/elephants-dream-chapters-en.vtt">
+                    </track>
+                </video> 
+                      
+    </div>
+    <div id="button">     
+        <button id="btn-cinza" class="btn3d btn btn-default btn-lg">Escala de Cinza</button>
+        <button id="btn-sepia" class="btn3d btn btn-default btn-lg">Sepia</button>  
+        <button id="btn-saturate" class="btn3d btn btn-default btn-lg">Saturate</button>             
+    </div> 
+
+    <button id ="outrapg"><a href="index2.html"> Segundo Filme</a> </button>
+</div>
+
+
+    <canvas id="canvas">
+    </canvas>
+
+    <div id="imgs"></div>
+    <div id="tracks"></div>
+    <script src="video.js"></script>
+    <script src="funcoes.js"></script>
+</body>
+</html>
